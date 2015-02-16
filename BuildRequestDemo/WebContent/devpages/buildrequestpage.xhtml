@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+    	<h:outputStylesheet library="css" name="table-style.css"  />
+    </h:head>
+    <h:body>    	
+ 		Build Request Page
+ 		<h:form> 			
+	 		<h:outputText value="Team Name" />&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:selectOneMenu valueChangeListener="#{buildRequestBean.onSelectTeam}">
+	 			<f:selectItem itemLabel="Mind bogglers" itemValue="Mind bogglers"></f:selectItem>
+	 			<f:selectItem itemLabel="Riders" itemValue="Riders"></f:selectItem>
+	 			<f:selectItem itemLabel="Miracle Makers" itemValue="Miracle Makers"></f:selectItem>
+	 			<f:selectItem itemLabel="Mountain Movers" itemValue="Mountain Movers"></f:selectItem>
+	 			<f:selectItem itemLabel="Master Minds" itemValue="Master Minds"></f:selectItem>
+	 		</h:selectOneMenu><br></br>
+	 		<h:outputText value="Code Drop Environment" />&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:selectOneMenu id="countries" label="Countries" value="-Select Environment"
+	 		valueChangeListener="#{buildRequestBean.onSelectEnv}">
+				<f:selectItems value="#{buildRequestBean.environments}" />
+	 		</h:selectOneMenu><br></br>
+	 		<h:outputText value="Requester Name"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:inputText value="#{loginBean.username}" id="username" readonly="true"/><br></br>
+	 		<h:outputText value="Request type"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:inputText value="#{buildRequestBean.requesttype}" id="requestype" /><br></br>
+	 		<h:outputText value="Request Date"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:inputText value="#{buildRequestBean.requestdate}" id="requestdate" /><br></br>
+	 		<h:outputText value="Request Time"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:inputText value="#{buildRequestBean.requesttime}" id="requesttime" /><br></br>
+	 		<h:outputText value="Requirements Completed"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:inputText value="#{buildRequestBean.requirements}" id="requirements" /><br></br>
+	 		<h:outputText value="Defects Fixed"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:inputText value="#{buildRequestBean.defects}" id="defects" /><br></br>
+	 		<h:outputText value="Remarks"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<h:inputTextarea value="#{buildRequestBean.remarks}" id="remarks" /><br></br>
+	 		<h:commandButton value="Submit" action="#{buildRequestBean.raiseDeploymentRequest}"/>
+	 	</h:form>
+    </h:body> 
+</html>

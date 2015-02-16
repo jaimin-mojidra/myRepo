@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14234733942400" configfile="/BuildRequestDemo/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="96" y="79" id="pf14235600287630" outlinks="pf14235600287631 pf14235600420734" path="/login.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="brtpages/brt.xhtml" x="252" y="36" id="pf14235600287632" inlinks="pf14235600287631" path="/brtpages/brt.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="devpages/devteam.xhtml" x="252" y="144" id="pf14235600287633" inlinks="pf14235600420734" path="/devpages/devteam.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="122" y="370" id="pf14235600287630" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14235600287631 pf14235600420734" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="brtpages/brt.xhtml" x="338" y="178" id="pf14235600287632" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14235600287631" path="/brtpages/brt.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="devpages/devteam.xhtml" x="338" y="562" id="pf14235600287633" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf14235600420734" path="/devpages/devteam.xhtml"/>
   <links id="pf14235600287631" target="pf14235600287632" source="pf14235600287630" outcome="brt" redirect="true" fromaction="#{loginBean.login}"/>
   <links id="pf14235600420734" target="pf14235600287633" source="pf14235600287630" outcome="devteam" redirect="true" fromaction="#{loginBean.login}"/>
 </pageflow:Pageflow>

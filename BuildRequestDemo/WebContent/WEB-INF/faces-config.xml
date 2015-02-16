@@ -10,6 +10,16 @@
 		<managed-bean-class>com.login.LoginBean</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>redirectBean</managed-bean-name>
+		<managed-bean-class>com.devteambeans.RedirectBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>buildRequestBean</managed-bean-name>
+		<managed-bean-class>com.devteambeans.BuildRequestBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
 	<navigation-rule>
 		<display-name>login.xhtml</display-name>
 		<from-view-id>/login.xhtml</from-view-id>

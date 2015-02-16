@@ -35,13 +35,11 @@ public class GetString {
 		PreparedStatement ps = null;
 		ResultSet result = null;
 		try {
-			ps = con.prepareStatement("select usertype from user where username = \'"+ username +"\' and password = \'" + password + "\';");
-			System.out.println("select usertype from user where username = \'"+ username +"\' and password = \'" + password + "\';");
+			ps = con.prepareStatement("select usertype from user where username = \'"+ username +"\' and password = \'" + password + "\';");			
 			result =  ps.executeQuery();
 			String usertype = "failed";
 			while(result.next()){
-				usertype = result.getString("usertype");
-				System.out.println("result user type " + usertype);				
+				usertype = result.getString("usertype");			
 			}
 			return usertype;
 		} catch (SQLException e) {

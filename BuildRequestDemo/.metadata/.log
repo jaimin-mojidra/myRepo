@@ -1,0 +1,32 @@
+!SESSION 2015-02-11 10:37:10.174 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data D:\Java Study\DeploymentTracker\Repo\BuildRequestDemo -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-11 10:37:21.796
+!MESSAGE System property http.proxyHost is not set but should be 172.28.49.94.
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-11 10:37:21.817
+!MESSAGE System property http.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-11 10:37:21.818
+!MESSAGE System property https.proxyHost is not set but should be 172.28.49.94.
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-11 10:37:21.819
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-11 10:37:21.822
+!MESSAGE System property https.proxyHost is not set but should be 172.28.49.94.
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-11 10:37:21.823
+!MESSAGE System property https.proxyPort is not set but should be 80.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-02-11 10:37:35.113
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Jaimin_Mojidra'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
